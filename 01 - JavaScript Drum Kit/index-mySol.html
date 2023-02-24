@@ -67,10 +67,12 @@
       if (!(elements.length === 0)) {
         const keyElement = elements[0];
         const audioElement = elements[1];
-        keyElement.className = "key playing"
+        keyElement.className = "key playing";
         setTimeout(() => {
           keyElement.className = "key"
         }, 200);
+        // this allows the same button to be spammed continuously
+        audioElement.currentTime = 0;
         audioElement.play()
         console.log(keyElement)
       }
