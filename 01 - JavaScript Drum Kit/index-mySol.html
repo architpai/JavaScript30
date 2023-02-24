@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>JS Drum Kit</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="https://fav.farm/🔥" />
 </head>
+
 <body>
 
 
@@ -58,10 +60,26 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
-<script>
+  <script>
+    document.addEventListener("keydown", (event) => {
+      const keycode = event.keyCode;
+      const elements = document.querySelectorAll(`[data-key="${keycode}"]`)
+      if (!(elements.length === 0)) {
+        const keyElement = elements[0];
+        const audioElement = elements[1];
+        keyElement.className = "key playing"
+        setTimeout(() => {
+          keyElement.className = "key"
+        }, 200);
+        audioElement.play()
+        console.log(keyElement)
+      }
+      else return;
 
-</script>
+    });
+  </script>
 
 
 </body>
+
 </html>
