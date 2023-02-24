@@ -27,10 +27,10 @@ document.querySelector("#my-id").dataset.value;
 
 Data and Elements are now tightly coupled.
 
-#### 2.Using <kbd> and <audio> tags:
+#### 2.Using < kbd > and < audio > tags:
 
 Theses are new tags that I found while working through the project.
 
-I had previously used audio in a web page but had imported it through javaScript the <audio> tag seems to be a neat way to manage audio when particular audio is associated with particular elements.
+I had previously used audio in a web page but had imported it through javaScript the < audio > tag seems to be a neat way to manage audio when particular audio is associated with particular elements.
 
-The <kbd> tag on the other hand is a neat way to represent textual user input from a keyboard, voice input, or any other text entry device.
+The < kbd > tag on the other hand is a neat way to represent textual user input from a keyboard, voice input, or any other text entry device.
