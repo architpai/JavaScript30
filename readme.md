@@ -17,6 +17,7 @@ Open to all criticism.
 #### 1.Data attributes:
 
 Data attributes are used to associtate data with elements.
+
 **Syntax** : data-XXXX
 This data can then be accessed in HTML using dataset.
 
